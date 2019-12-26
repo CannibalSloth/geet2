@@ -15,8 +15,10 @@ int main()
 	switch (b)
 	{
 	case 1:
-		cout << "Функция в доработке" << endl;
-
+		cout << "Введите слагаемые" << endl;
+		cin >> c >> d;
+		cout << MySum(c, d) << endl;
+		break;
 	case 2:
 		cout << "Функция в доработке" << endl;
 	case 3:
