@@ -6,9 +6,9 @@ int main()
 	setlocale(LC_ALL, "ru");
 	int  b, c, d;
 
-	cout << "Какая операция?" << endl;
-	cout << "1: сложение" << endl << "2: вычитание" << endl;
-	cout << "3: умножение" << endl << "4:деление" << endl;
+	cout << "что хотите сделать?" << endl;
+	cout << "введите 1 если хотите сложить" << endl << "введите 2 если хотите вычесть" << endl;
+	cout << "введите 3 если хотите умножить" << endl << "введите 4 если хотите поделить" << endl;
 	cin >> b;
 	cout << endl;
 
@@ -20,11 +20,22 @@ int main()
 		cout << MySum(c, d) << endl;
 		break;
 	case 2:
-		cout << "Функция в доработке" << endl;
+		cout << "Введите уменьшаемое и вычитаемое" << endl;
+		cin >> c >> d;
+
+		cout  << MySub(c, d) << endl;
+		break;
 	case 3:
-		cout << "Функция в доработке" << endl;
+		cout << "Введите первый и второй множитель" << endl;
+		cin >> c >> d;
+
+		cout << MyMul(c, d) << endl;
+		break;
 	case 4:
-		cout << "Функция в доработке" << endl;
+		cout << "Введите делимое и делитель" << endl;
+		cin >> c >> d;
+		cout << MyDiv(c, d) << endl;
+		break;
 
 	}
 	system("pause");
